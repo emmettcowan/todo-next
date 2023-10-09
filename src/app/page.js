@@ -1,13 +1,9 @@
-import Main from '@/components/main'
-import NavBar from '@/components/NavBar'
-import Footer from '@/components/footer'
+import Todo from "@/components/todo/Todo"
 
 export default function Home() {
   return (
-    <main className="bg-zinc-700 flex flex-col h-screen justify-between">
-      <NavBar />
-      <Main />
-      <Footer />
+    <main className="bg-zinc-700 m-5 flex flex-col h-screen">
+      <Todo />
     </main>
   )
 }

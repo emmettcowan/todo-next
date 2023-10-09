@@ -18,7 +18,7 @@ export default function Todo() {
   }
 
   return (
-    <div className="grid grid-cols-1">
+    <div className="grid grid-cols-1 m-5">
       <div className="p-4 bg-gray-500 rounded-lg shadow-xl">
         <div className="flex">
           <form className=" w-screen" onSubmit={handleSubmit}>

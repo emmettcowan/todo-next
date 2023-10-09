@@ -8,10 +8,9 @@ export default function NavBar() {
     <nav className="bg-zinc-800 p-4">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <div className="text-white text-xl font-semibold">ToDo App</div>
+          <Link className="text-white text-xl font-semibold" href="/">ToDo App</Link>
           <ul className="flex space-x-4">
-            <li><Link href="/login"> login</Link></li>
-            <li><Link href="/register"> Register</Link></li>
+            <li><Link href="/about"> About</Link></li>
           </ul>
         </div>
       </div>
