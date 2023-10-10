@@ -9,7 +9,7 @@ export default async function Dashboard() {
   }
 
   return (
-    <main className="bg-zinc-700 flex  flex-col items-center p-24">
+    <main className="bg-zinc-700 flex  flex-col items-center p-24 h-screen">
       <div>
         <h1>Dashboard</h1>
       </div>
