@@ -2,11 +2,9 @@
 import React from "react";
 import TodoItem from "./TodoItem";
 
-const todoList = [];
-
 export default function Todo() {
-
   const [newTodo, setNewTodo] = React.useState("");
+  const [todoList, setTodoList] = React.useState([]);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -15,6 +13,10 @@ export default function Todo() {
     }
     setNewTodo("");
     event.target.reset();
+  }
+
+  function handleDelete(id) {
+    setTodoList(todoList.filter((item) => item.id !== id));
   }
 
   return (
@@ -33,7 +35,7 @@ export default function Todo() {
           </form>
         </div>
       </div>
-      {todoList.length > 0 && <TodoItem entry={todoList} />}
+      {todoList.length > 0 && <TodoItem entry={todoList} handleDelete={handleDelete} />}
     </div>
   );
 }
