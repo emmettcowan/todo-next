@@ -1,4 +1,5 @@
 import React from "react";
+import { RiDeleteBin6Line } from "react-icons/ri";
 
 export default function TodoItem({ entry, handleDelete }) {
   return (
@@ -9,7 +10,9 @@ export default function TodoItem({ entry, handleDelete }) {
             <li key={id} className="flex w-full">
               <p className="flex w-full">{text}</p>
               <input className="h-6 w-6 m-2" type="checkbox" name="checkbox" id="checkbox" />
-              <button className="h-6 w-6 m-2" onClick={() => handleDelete(id)}>x</button>
+              <button className="h-6 w-6 m-2" onClick={() => handleDelete(id)}>
+                <RiDeleteBin6Line size={25} color="red" />
+              </button>
             </li>
           ))}
       </ul>
