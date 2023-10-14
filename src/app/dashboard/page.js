@@ -1,5 +1,7 @@
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
+import Todo from "@/components/todo/Todo"
+
 
 export default async function Dashboard() {
   const session = await getServerSession();
@@ -11,7 +13,7 @@ export default async function Dashboard() {
   return (
     <main className="bg-zinc-700 flex  flex-col items-center p-24 h-screen">
       <div>
-        <h1>Dashboard</h1>
+        <Todo />
       </div>
     </main>
   );
