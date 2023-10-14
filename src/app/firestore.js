@@ -1,5 +1,5 @@
 import { initializeApp, firestore } from "firebase/app";
-import { getFirestore, collection, getDocs } from "firebase/firestore";
+import { getFirestore, collection, getDocs, doc, setDoc } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -12,8 +12,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-
-
 const db = getFirestore(app);
 
 

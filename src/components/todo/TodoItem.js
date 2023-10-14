@@ -7,8 +7,8 @@ export default function TodoItem({ entry, handleDelete }) {
       <ul className="w-full">
         {entry &&
           entry.map(({ id, text }) => (
-            <li key={id} className="flex w-full">
-              <p className="flex w-full">{text}</p>
+            <li key={id} className="flex w-full font-bold">
+              <p className="flex w-full text-lg ">{text}</p>
               <input className="h-6 w-6 m-2" type="checkbox" name="checkbox" id="checkbox" />
               <button className="h-6 w-6 m-2" onClick={() => handleDelete(id)}>
                 <RiDeleteBin6Line size={25} color="red" />
