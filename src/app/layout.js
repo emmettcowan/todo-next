@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <AuthProvider>
       <html lang="en">
-        <body className="bg-zinc-700  flex flex-col h-screen justify-between">
+        <body className="bg-gray-200  flex flex-col h-screen justify-between">
           <NavBar />
           {children}
           <Footer />

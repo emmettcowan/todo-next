@@ -8,7 +8,7 @@ export default async function Dashboard() {
 
   return (
     <AuthCheck>
-      <main className="bg-zinc-700 flex  flex-col items-center p-5 h-screen">
+      <main className="flex  flex-col items-center p-5 h-screen">
         <div>
           <Todo session={session} />
         </div>
