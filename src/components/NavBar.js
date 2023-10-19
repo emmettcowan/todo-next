@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { SignInButton, SignOutButton } from './buttons';
+import { SignInButton } from './buttons';
 
 
 export default function NavBar() {
@@ -13,7 +13,6 @@ export default function NavBar() {
           <Link className="text-white text-xl font-semibold" href="/">ToDo App</Link>
           <ul className="flex space-x-4">
             <li><SignInButton /></li>
-            <li><Link href="/about">About</Link></li>
           </ul>
         </div>
       </div>

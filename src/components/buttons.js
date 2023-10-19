@@ -11,15 +11,15 @@ export function SignInButton() {
   if (status === 'authenticated') {
     return (
       <>
-        <Link href="/dashboard" className="p-3">Dashboard</Link>
+        <Link href="/dashboard" className="p-3 font-bold">Dashboard</Link>
         <SignOutButton />
       </>
     );
   }
 
-  return <button onClick={() => signIn()}>Sign in</button>
+  return <button className=" font-bold" onClick={() => signIn()}>Sign in</button>
 }
 
 export function SignOutButton() {
-  return <button onClick={() => signOut()}>Sign out</button>
+  return <button className=" font-bold" onClick={() => signOut()}>Sign out</button>
 }
