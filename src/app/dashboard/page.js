@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth";
-import Todo from "@/components/todo/Todo"
-import Image from "next/image";
+import Todo from "@/components/todo/Todo";
+import Weather from "@/components/Weather";
 
 
 export default async function Dashboard() {
@@ -17,6 +17,7 @@ export default async function Dashboard() {
           <img src={userImg} width="70" className="rounded-full ml-5" alt="user profile picture" />
         </div>
         <Todo session={session} />
+        <Weather />
       </div>
     </main>
   );
