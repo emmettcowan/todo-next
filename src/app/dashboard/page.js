@@ -14,7 +14,7 @@ export default async function Dashboard() {
           <div className="flex flex-col justify-center">
             <h1 className="text-zinc-700 ml-24 font-extrabold text-4xl">Hello, {session.user.name}</h1>
           </div>
-          <img src={userImg} width="70" className="rounded-full ml-5" alt="user profile picture" />
+          {userImg && <img src={userImg} width="70" className="rounded-full ml-5" alt="user profile picture" />}
         </div>
         <Todo session={session} />
         <Weather />
