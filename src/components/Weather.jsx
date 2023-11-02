@@ -6,14 +6,10 @@ export default function Weather () {
   const [data, setData] = useState({});
   const [location, setLocation] = useState('Limerick');
   const [inputValue, setInputValue] = useState('');
-  const API_KEY = process.env.WEATHER_API
 
-  const fetchData = async (newLocation) => {
-    console.log(API_KEY)
+  const fetchData = async (location) => {
     try {
-      const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${newLocation}&aqi=no`
-      );
+      const response = await fetch(`/api/weather?location=${location}`);
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
