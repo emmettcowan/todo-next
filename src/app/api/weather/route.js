@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 
 
-export async function GET(req, res) {
+export async function GET(req) {
   const url = new URL(req.url);
   const params = url.searchParams;
   const location = params.get("location");
